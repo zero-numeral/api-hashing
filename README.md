@@ -22,7 +22,7 @@ glob.glob(r'C:\Windows\System32\*.dll')
 
 After using the script, we will get a json file that will contain function names and their hash.
 
-```json
+```
 [snip]
  "user32.dll": {
         "hash": "0x814ea",
