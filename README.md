@@ -13,10 +13,10 @@ You can use any external script to calculate the hash. In my case, I used a simp
 pip3 install -r requirements.txt
 
 # you can specify which DLLs will be passed through the hash function,
-# by changing the next line:
+# by changing the following line:
 glob.glob(r'C:\Windows\System32\user32.dll')
 
-# for exmaple, to include all system DLLs you should type:
+# for exmaple, to include all system DLLs you should use:
 glob.glob(r'C:\Windows\System32\*.dll')
 ```
 
