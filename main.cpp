@@ -54,10 +54,9 @@ T* get_func_by_hash(LPCSTR module_name, uint32_t func_hash)
 int main()
 { 
 	// Calling MessageBoxA using function hash
-    auto MsgBox = get_func_by_hash<decltype(MessageBoxA)>("user32.dll", MessageBoxA_hash);
+    	auto MsgBox = get_func_by_hash<decltype(MessageBoxA)>("user32.dll", MessageBoxA_hash);
 	
-	if (MsgBox) 
-	{
+	if (MsgBox) {
 		MsgBox(0, "Text", "Caption", MB_ICONWARNING | MB_CANCELTRYCONTINUE | MB_DEFBUTTON2);
 	}
 
