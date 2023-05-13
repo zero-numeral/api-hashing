@@ -37,7 +37,7 @@ and define it as constant value inside main code.
 
 In my case it looks like that
 ```c++
-#define MessageBoxA_hash  0x92b4d 
+constexpr uint32_t MessageBoxA_hash = 0x92b4d;
 ```
  Now we need to implement the hash function that we used before, but now in the main code.<br />
  After that, we also need to create a function that will list all the loaded functions of the module we want to use and compare their hashes with our defined one.
