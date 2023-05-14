@@ -23,7 +23,7 @@ T get_function_by_hash(uint32_t func_hash)
 	requires std::is_pointer_v<T>
 {
 	/*
-		The LDR_MODULE structure is a undocumented version of the LDR_DATA_TABLE_ENTRY struct,
+		The LDR_MODULE structure is an undocumented version of the LDR_DATA_TABLE_ENTRY struct,
 		which is used in WindowsNT internal processes.
 
 		http://undocumented.ntinternals.net/index.html?page=UserMode/Structures/LDR_MODULE.html
